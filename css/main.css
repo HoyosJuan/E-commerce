@@ -680,7 +680,7 @@ header {
       text-align: center; }
       .footer .contenedor-footer .fila .columna.logo-redes .redes-sociales {
         justify-content: center; }
-    .footer .contenedor-footer .fila .columna.creditos, .footer .contenedor-footer .fila .columna.venta-telefonica, .footer .contenedor-footer .fila .columna.recomendados, .footer .contenedor-footer .fila .columna.ayuda, .footer .contenedor-footer .fila .columna.comprar {
+    .footer .contenedor-footer .fila .columna.creditos, .footer .contenedor-footer .fila .columna.venta-telefonica, .footer .contenedor-footer .fila .columna.recomendados, .footer .contenedor-footer .fila .columna.ayuda, .footer .contenedor-footer .fila .columna.comprar, .footer .contenedor-footer .fila .columna.servicios {
       display: none; } }
 
 /*# sourceMappingURL=main.css.map */
