@@ -560,4 +560,127 @@ header {
         color: #484848;
         padding-top: 10px; }
 
+.footer {
+  width: 100%;
+  border-top: 1px solid #dadada;
+  background: #fff;
+  padding: 50px 0px; }
+  .footer .contenedor-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .footer .contenedor-footer .fila {
+      width: 100%;
+      padding-bottom: 15px;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-column-gap: 20px; }
+      .footer .contenedor-footer .fila:nth-child(1) {
+        border-bottom: 1px solid #dadada; }
+      .footer .contenedor-footer .fila:nth-child(2) {
+        padding-top: 15px; }
+      .footer .contenedor-footer .fila .columna {
+        grid-column: span 3;
+        display: flex;
+        flex-direction: column; }
+        .footer .contenedor-footer .fila .columna .logo {
+          color: #4a4a4a;
+          font-size: 34px;
+          grid-column: span 2; }
+          .footer .contenedor-footer .fila .columna .logo p span {
+            font-weight: bold;
+            color: #182c61; }
+        .footer .contenedor-footer .fila .columna .redes-sociales {
+          width: 100%;
+          margin-top: 15px;
+          display: flex;
+          flex-direction: row; }
+          .footer .contenedor-footer .fila .columna .redes-sociales li {
+            margin-right: 20px; }
+            .footer .contenedor-footer .fila .columna .redes-sociales li a {
+              color: #4a4a4a; }
+              .footer .contenedor-footer .fila .columna .redes-sociales li a:hover {
+                color: #B33771; }
+        .footer .contenedor-footer .fila .columna p {
+          margin-bottom: 5px;
+          color: #444643; }
+          .footer .contenedor-footer .fila .columna p.titulo-fila {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            color: #000;
+            display: flex;
+            font-weight: 400;
+            line-height: 1;
+            margin-bottom: 5px;
+            margin-top: 0px;
+            margin-right: 5px;
+            text-align: left; }
+          .footer .contenedor-footer .fila .columna p.subtitulo-fila {
+            display: flex;
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 500;
+            white-space: nowrap;
+            color: #000; }
+          .footer .contenedor-footer .fila .columna p.contenido-fila {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 1.4;
+            color: #4a4a4a;
+            text-align: left; }
+        .footer .contenedor-footer .fila .columna label {
+          margin: 3.5px 0;
+          color: black;
+          font-size: 18px;
+          font-weight: 500; }
+        .footer .contenedor-footer .fila .columna input {
+          margin: 3.5px 0; }
+          .footer .contenedor-footer .fila .columna input[type='email'] {
+            padding: 10px;
+            outline: none;
+            border: 1px solid #cccccc;
+            font-size: 14px;
+            font-weight: 400;
+            color: #4a4a4a;
+            border-radius: 2px;
+            margin-right: 9px;
+            margin-bottom: 13px; }
+          .footer .contenedor-footer .fila .columna input[type='submit'] {
+            background-color: #182c61;
+            color: white;
+            padding: 10px;
+            border: none;
+            margin-right: 9px;
+            cursor: pointer;
+            transition: all .5s ease; }
+            .footer .contenedor-footer .fila .columna input[type='submit']:hover {
+              box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.16); }
+        .footer .contenedor-footer .fila .columna .lista-footer li {
+          margin: 5px 0; }
+          .footer .contenedor-footer .fila .columna .lista-footer li a {
+            padding: 7px 0px;
+            color: #4a4a4a;
+            line-height: 1.07;
+            letter-spacing: 0.2px;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all .8s ease; }
+            .footer .contenedor-footer .fila .columna .lista-footer li a:hover {
+              text-decoration: underline; }
+
+@media (max-width: 978px) {
+  .footer .contenedor-footer .fila .columna {
+    grid-column: span 6;
+    margin-top: 15px; } }
+@media (max-width: 500px) {
+  .footer .contenedor-footer .fila .columna {
+    grid-column: span 12;
+    margin-top: 15px; }
+    .footer .contenedor-footer .fila .columna.logo-redes {
+      text-align: center; }
+      .footer .contenedor-footer .fila .columna.logo-redes .redes-sociales {
+        justify-content: center; }
+    .footer .contenedor-footer .fila .columna.creditos, .footer .contenedor-footer .fila .columna.venta-telefonica, .footer .contenedor-footer .fila .columna.recomendados, .footer .contenedor-footer .fila .columna.ayuda, .footer .contenedor-footer .fila .columna.comprar {
+      display: none; } }
+
 /*# sourceMappingURL=main.css.map */
