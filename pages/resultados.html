@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/all.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Productos</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="contenedor contenedor-header">
+      <div class="logo">
+        <p class='desktop-logo'>Market<span>Out</span></p>
+        <p class='mobil-logo'>M<span>O</span></p>
+      </div>
+      <form action="#" class="buscador" method="POST" >
+        <input type="text" placeholder="Buscar productos, marcas y más...">
+        <button type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <div class="logo-alerta">
+        <p><i class="fas fa-parachute-box"></i>Envíos gratis por Market Puntos</p>
+      </div>
+      <div class="enviar-a">
+        <i class="fas fa-map-marker-alt icon-ubicar"></i>
+        <span>Enviar a</span>
+        <p>Capital Federal</p>
+        <i class="fas fa-angle-right sub-envios"></i>
+      </div>
+      <ul class="menu-principal-web">
+        <li>
+          Categorías <i class="fas fa-angle-down"></i>
+        </li>
+        <li><a href="#">Ofertas</a></li>
+        <li class='medio-none' ><a href="#">Historial</a></li>
+        <li class='medio-none' ><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+      <ul class="menu-usuario-web">
+        <li class='media'><a href="#">Creá tu cuenta</a></li>
+        <li class='media'><a href="#">Ingresá</a></li>
+        <li class='media'><a href="#">Mis Compras</a></li>
+        <li><i class="fas fa-shopping-cart"></i></li>
+      </ul>
+      <div class="menu-mobil">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="contenedor contenedor-resultado">
+
+      <!-- Filtros -->
+      <div class="filtros">
+        <h1 class="titulo">TV</h1>
+        <p class='cant-resultados'><span class='num-resultado'>33</span> resultados</p>
+        <div class="filtros-aplicados">
+          <div class="texto-filtros-aplicados">
+            <h3 class="titulo-lista">Filtros Aplicados</h3>
+            <a href="#" class="borrar-filtros">Borrar</a>
+          </div>
+          <div class="filtro">
+            Samsung<i class="fas fa-times"></i>
+          </div>
+          <div class="filtro">
+            Ahora 12 <i class="fas fa-times"></i>
+          </div>
+          <div class="filtro">
+            LG <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <ul class="opciones">
+          <li class="titulo-lista"><h3>Formas de Pago</h3></li>
+          <li class="opcion">
+            <input type="checkbox">
+            <label for="">Ahora 12 <span>(21)</span></label>
+          </li>
+          <li class="opcion">
+            <input type="checkbox">
+            <label for="">12 Cuotas sin interés <span>(11)</span></label>
+          </li>
+        </ul>
+        <ul class="opciones">
+          <li class="titulo-lista"><h3>Marca</h3></li>
+          <li class="opcion">
+            <input type="checkbox">
+            <label for="">Samsung<span>(8)</span></label>
+          </li>
+          <li class="opcion">
+            <input type="checkbox">
+            <label for="">Philips <span>(6)</span></label>
+          </li>
+          <li class="opcion">
+            <input type="checkbox">
+            <label for="">Hitachi <span>(4)</span></label>
+          </li>
+          <li class="opcion">
+            <input type="checkbox">
+            <label for="">Admiral <span>(3)</span></label>
+          </li>
+          <li class="opcion">
+            <input type="checkbox">
+            <label for="">LG <span>(3)</span></label>
+          </li>
+          <li class="opcion">
+            <input type="checkbox">
+            <label for="">TCL <span>(3)</span></label>
+          </li>
+          <li class="ver-mas-opciones">Ver todas</li>
+        </ul>
+      </div>
+
+      <!-- Filtros Mobile -->
+      <div class="filtros-mobile">
+        <div class="opciones-filtro">
+          <button><i class="fas fa-sliders-h"></i> FILTRAR</button>
+          <button><i class="fas fa-arrows-alt-v"></i> ORDENAR</button>
+        </div>
+        <div class="filtros-aplicados">
+          <div class="texto-filtros-aplicados">
+            <a href="#" class="borrar-filtros">Borrar todos</a>
+          </div>
+          <div class="filtro">
+            Samsung<i class="fas fa-times"></i>
+          </div>
+          <div class="filtro">
+            Ahora 12 <i class="fas fa-times"></i>
+          </div>
+          <div class="filtro">
+            LG <i class="fas fa-times"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Productos -->
+      <div class="productos">
+        <h3 class="subtitulo">Nuevos Productos</h3>
+        <!-- <div class="producto">
+          <figure class="portada-producto">
+            <img class="img-producto" src='../images/samsungnote.jpg' alt='' >
+          </figure>
+          <h4 class="nombre-producto">Celular Libre Samsung Galaxy Note 10 Plus 256G</h4>
+          <div class="precio-producto">
+            <div class="precio-anterior">
+              <span class='precio-tachado'>$ 114.999</span>
+              <span class='descuento-precio'>21% OFF</span>
+            </div>
+            <span class='actual-precio'>$89.999</span>
+          </div>
+        </div>   
+        <div class="producto">
+          <figure class="portada-producto">
+            <img class="img-producto" src='../images/samsungnote.jpg' alt='' >
+          </figure>
+          <h4 class="nombre-producto">Celular Libre Samsung Galaxy Note 10 Plus 256G</h4>
+          <div class="precio-producto">
+            <div class="precio-anterior">
+              <span class='precio-tachado'>$ 114.999</span>
+              <span class='descuento-precio'>21% OFF</span>
+            </div>
+            <span class='actual-precio'>$89.999</span>
+          </div>
+        </div>   
+        <div class="producto">
+          <figure class="portada-producto">
+            <img class="img-producto" src='../images/samsungnote.jpg' alt='' >
+          </figure>
+          <h4 class="nombre-producto">Celular Libre Samsung Galaxy Note 10 Plus 256G</h4>
+          <div class="precio-producto">
+            <div class="precio-anterior">
+              <span class='precio-tachado'>$ 114.999</span>
+              <span class='descuento-precio'>21% OFF</span>
+            </div>
+            <span class='actual-precio'>$89.999</span>
+          </div>
+        </div>   
+        <div class="producto">
+          <figure class="portada-producto">
+            <img class="img-producto" src='../images/samsungnote.jpg' alt='' >
+          </figure>
+          <h4 class="nombre-producto">Celular Libre Samsung Galaxy Note 10 Plus 256G</h4>
+          <div class="precio-producto">
+            <div class="precio-anterior">
+              <span class='precio-tachado'>$ 114.999</span>
+              <span class='descuento-precio'>21% OFF</span>
+            </div>
+            <span class='actual-precio'>$89.999</span>
+          </div>
+        </div>   
+        <div class="producto">
+          <figure class="portada-producto">
+            <img class="img-producto" src='../images/samsungnote.jpg' alt='' >
+          </figure>
+          <h4 class="nombre-producto">Celular Libre Samsung Galaxy Note 10 Plus 256G</h4>
+          <div class="precio-producto">
+            <div class="precio-anterior">
+              <span class='precio-tachado'>$ 114.999</span>
+              <span class='descuento-precio'>21% OFF</span>
+            </div>
+            <span class='actual-precio'>$89.999</span>
+          </div>
+        </div>    -->
+      </div>
+
+    </div>    
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="contenedor contenedor-footer">
+      <div class="fila">
+        <div class="columna logo-redes">
+          <div class="logo">
+            <p class='desktop-logo'>Market<span>Out</span></p>
+            <!-- <p class='mobil-logo'>M<span>O</span></p> -->
+          </div>
+          <ul class="redes-sociales">
+            <li>
+              <a href='#'><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href='#'><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href='#'><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href='#'><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href='#'><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="columna venta-telefonica">
+          <p class='titulo-fila'>Venta telefónica:</p>
+          <p class='subtitulo-fila'>0810 333 8700</p>
+          <p class='contenido-fila'>
+            LU-VI de 8:00 a 20:00<br/>SA-DO-Feriados 9:00 a 21:00
+          </p>
+        </div>
+        <div class="columna creditos">
+          <p class='titulo-fila'>Cobranza de créditos:</p>
+          <p class='subtitulo-fila'>0810 333 8700</p>
+          <p class='contenido-fila'>
+            LU-VI de 8:00 a 20:00
+          </p>
+        </div>
+        <div class="columna servicios">
+          <p class='titulo-fila'>Servicios a empresas:</p>
+          <p class='subtitulo-fila'>Ventas corporativas</p>
+        </div>
+      </div>
+      <div class="fila">
+        <form action="#" class="columna subscribirse" method='POST'>
+          <label for='email'>Recibí ofertas y promociones</label>
+          <input type='email' name='email' id='email' placeholder='Ingresá tu email' />
+          <input type='submit' value='SUSCRIBIRME' />
+        </form>
+        <div class="columna comprar">
+          <p class='subtitulo-fila'>Comprar en MarketOut.com</p>
+          <ul class='lista-footer'>
+            <li><a href="#">Medios de pago</a></li>
+            <li><a href="#">Garantía extendida</a></li>
+            <li><a href="#">Servicio técnico</a></li>
+            <li><a href="#">MarketOut créditos</a></li>
+            <li><a href="#">Información legal</a></li>
+          </ul>
+        </div>
+        <div class="columna ayuda">
+          <p class='subtitulo-fila'>Ayuda</p>
+          <ul class='lista-footer'>
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Contactanos</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Sucursales</a></li>
+            <li><a href="#">Devoluciones</a></li>
+          </ul>
+        </div>
+        <div class="columna recomendados">
+          <p class='subtitulo-fila'>Recomendados</p>
+          <ul class='lista-footer'>
+            <li><a href="#">Smart TV</a></li>
+            <li><a href="#">Celulares</a></li>
+            <li><a href="#">Aire acondicionado</a></li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Beneficios Club Personal</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

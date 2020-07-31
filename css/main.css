@@ -560,6 +560,169 @@ header {
         color: #484848;
         padding-top: 10px; }
 
+main {
+  padding: 20px 0px; }
+  main .contenedor-resultado {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px; }
+    main .contenedor-resultado .filtros-mobile {
+      display: none; }
+    main .contenedor-resultado .filtros {
+      grid-column: span 3;
+      padding: 20px 0px; }
+      main .contenedor-resultado .filtros .titulo {
+        font-size: 26px;
+        line-height: 1.15;
+        letter-spacing: -0.35px;
+        color: #000; }
+      main .contenedor-resultado .filtros .cant-resultados {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: 1rem;
+        font-weight: normal;
+        letter-spacing: -0.29px;
+        color: #484848; }
+        main .contenedor-resultado .filtros .cant-resultados span {
+          font-weight: 600;
+          color: #000; }
+      main .contenedor-resultado .filtros .filtros-aplicados {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; }
+        main .contenedor-resultado .filtros .filtros-aplicados .texto-filtros-aplicados {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px; }
+          main .contenedor-resultado .filtros .filtros-aplicados .texto-filtros-aplicados .titulo-lista {
+            font-size: 13px;
+            font-weight: 600;
+            text-align: left;
+            color: #484848;
+            text-transform: uppercase;
+            margin-right: 5px;
+            line-height: normal; }
+          main .contenedor-resultado .filtros .filtros-aplicados .texto-filtros-aplicados .borrar-filtros {
+            font-size: 14px;
+            color: #006afd;
+            letter-spacing: -0.5px;
+            cursor: pointer;
+            margin-left: 14px; }
+        main .contenedor-resultado .filtros .filtros-aplicados .filtro {
+          display: inline-flex;
+          text-align: center;
+          font-size: 13px;
+          font-weight: normal;
+          line-height: 1;
+          letter-spacing: -0.16px;
+          color: #4a4a4a;
+          background: #eeeeee none repeat scroll 0% 0%;
+          padding: 10px 14px;
+          border-radius: 4px;
+          margin-right: 8px;
+          margin-top: 15px; }
+          main .contenedor-resultado .filtros .filtros-aplicados .filtro i {
+            margin-left: 10px;
+            cursor: pointer; }
+      main .contenedor-resultado .filtros ul {
+        margin-top: 15px; }
+        main .contenedor-resultado .filtros ul .titulo-lista {
+          color: #000;
+          font-weight: 400;
+          text-align: left;
+          font-size: 0.875rem;
+          text-transform: uppercase; }
+        main .contenedor-resultado .filtros ul.opciones .opcion {
+          margin: 5px 0px; }
+          main .contenedor-resultado .filtros ul.opciones .opcion label {
+            padding-left: 20px;
+            line-height: 18px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: normal;
+            color: #000;
+            transition: all .8s ease;
+            text-transform: capitalize; }
+            main .contenedor-resultado .filtros ul.opciones .opcion label:hover {
+              text-decoration: underline; }
+        main .contenedor-resultado .filtros ul.opciones .ver-mas-opciones {
+          margin: 5px 0px;
+          font-size: 14px;
+          color: #005fff;
+          font-weight: 400;
+          cursor: pointer;
+          transition: all .8s ease; }
+          main .contenedor-resultado .filtros ul.opciones .ver-mas-opciones:hover {
+            text-decoration: underline; }
+    main .contenedor-resultado .productos {
+      grid-column: span 9; }
+
+@media (max-width: 780px) {
+  main .contenedor-resultado {
+    width: 100%; }
+    main .contenedor-resultado .filtros-mobile {
+      display: block;
+      grid-column: span 12; }
+      main .contenedor-resultado .filtros-mobile .opciones-filtro {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 15px;
+        justify-content: center;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        border-color: rgba(200, 200, 200, 0.8); }
+        main .contenedor-resultado .filtros-mobile .opciones-filtro button {
+          width: 40%;
+          border: none;
+          background: none;
+          font-size: 13px;
+          font-weight: 600;
+          color: #182c61;
+          letter-spacing: -0.410526px;
+          text-transform: uppercase;
+          cursor: pointer; }
+          main .contenedor-resultado .filtros-mobile .opciones-filtro button i {
+            margin-right: 9px; }
+          main .contenedor-resultado .filtros-mobile .opciones-filtro button:nth-child(1) {
+            border-right: 1px solid rgba(200, 200, 200, 0.8); }
+      main .contenedor-resultado .filtros-mobile .filtros-aplicados {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; }
+        main .contenedor-resultado .filtros-mobile .filtros-aplicados .texto-filtros-aplicados {
+          width: 100%; }
+          main .contenedor-resultado .filtros-mobile .filtros-aplicados .texto-filtros-aplicados .borrar-filtros {
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            color: #006afd;
+            letter-spacing: -0.5px;
+            cursor: pointer;
+            margin-left: 14px; }
+        main .contenedor-resultado .filtros-mobile .filtros-aplicados .filtro {
+          display: inline-flex;
+          text-align: center;
+          font-size: 13px;
+          font-weight: normal;
+          line-height: 1;
+          letter-spacing: -0.16px;
+          color: #4a4a4a;
+          background: #eeeeee none repeat scroll 0% 0%;
+          padding: 10px 14px;
+          border-radius: 4px;
+          margin-right: 8px;
+          margin-top: 15px; }
+          main .contenedor-resultado .filtros-mobile .filtros-aplicados .filtro i {
+            margin-left: 10px;
+            cursor: pointer; }
+    main .contenedor-resultado .filtros {
+      display: none; } }
 .footer {
   width: 100%;
   border-top: 1px solid #dadada;
