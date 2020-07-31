@@ -657,8 +657,114 @@ main {
           main .contenedor-resultado .filtros ul.opciones .ver-mas-opciones:hover {
             text-decoration: underline; }
     main .contenedor-resultado .productos {
-      grid-column: span 9; }
+      grid-column: span 9;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 10px;
+      padding: 20px 0px; }
+      main .contenedor-resultado .productos .producto {
+        background: #fff;
+        padding: 18px;
+        grid-column: span 4;
+        border-radius: 6px;
+        border: 1px solid #eeeeee;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+        transition: all .5s ease;
+        cursor: pointer;
+        gap: 14px;
+        display: grid;
+        grid-template: "img" min-content "titulo" min-content  "precio" / 1fr;
+        text-align: center; }
+        main .contenedor-resultado .productos .producto .portada-producto {
+          grid-area: img;
+          place-self: center;
+          display: block;
+          position: relative;
+          width: 100%;
+          margin: 0; }
+          main .contenedor-resultado .productos .producto .portada-producto .img-producto {
+            height: 100%;
+            max-width: 100%; }
+        main .contenedor-resultado .productos .producto .nombre-producto {
+          font-size: 14px;
+          grid-area: titulo;
+          font-weight: normal;
+          line-height: 20px;
+          height: 40px;
+          letter-spacing: -0.18px;
+          text-align: center;
+          color: black; }
+        main .contenedor-resultado .productos .producto .precio-producto .precio-anterior {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center; }
+          main .contenedor-resultado .productos .producto .precio-producto .precio-anterior .precio-tachado {
+            font-size: 18px;
+            text-decoration: line-through;
+            line-height: 1.66;
+            letter-spacing: -0.26px;
+            color: #888888;
+            align-self: center;
+            margin-right: 3px; }
+          main .contenedor-resultado .productos .producto .precio-producto .precio-anterior .descuento-precio {
+            font-size: 15px;
+            background-color: #B33771;
+            padding: 2px 3px;
+            border-radius: 2px;
+            color: #fff;
+            align-self: center; }
+        main .contenedor-resultado .productos .producto .precio-producto .actual-precio {
+          display: block;
+          font-size: 22px;
+          margin-top: 5px;
+          font-weight: 600;
+          line-height: 1;
+          letter-spacing: -0.32px;
+          color: #000; }
+        main .contenedor-resultado .productos .producto:hover {
+          box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.16); }
+      main .contenedor-resultado .productos .paginacion {
+        padding-top: 20px;
+        grid-column: span 12; }
+        main .contenedor-resultado .productos .paginacion .lista-paginacion {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          main .contenedor-resultado .productos .paginacion .lista-paginacion .anterior-paginacion a,
+          main .contenedor-resultado .productos .paginacion .lista-paginacion .siguiente-paginacion a {
+            font-size: 14px;
+            color: #4a4a4a;
+            line-height: 1.8;
+            line-height: 30px; }
+          main .contenedor-resultado .productos .paginacion .lista-paginacion .opcion-paginacion a {
+            display: inline-block;
+            background-color: #fff;
+            border: 1px solid #d9d9d9;
+            font-weight: 500;
+            min-width: 32px;
+            height: 32px;
+            margin: 0px 8px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.65);
+            transition: all .8s ease; }
+            main .contenedor-resultado .productos .paginacion .lista-paginacion .opcion-paginacion a:hover {
+              background-color: #B33771;
+              color: #fff; }
+            main .contenedor-resultado .productos .paginacion .lista-paginacion .opcion-paginacion a.select-paginacion {
+              background-color: #B33771;
+              color: #fff; }
 
+@media (max-width: 1023px) {
+  main .contenedor-resultado .filtros {
+    grid-column: span 4; }
+  main .contenedor-resultado .productos {
+    grid-column: span 8; }
+    main .contenedor-resultado .productos .producto {
+      grid-column: span 6; } }
 @media (max-width: 780px) {
   main .contenedor-resultado {
     width: 100%; }
@@ -722,7 +828,24 @@ main {
             margin-left: 10px;
             cursor: pointer; }
     main .contenedor-resultado .filtros {
-      display: none; } }
+      display: none; }
+    main .contenedor-resultado .productos {
+      grid-column: span 12; } }
+@media (max-width: 550px) {
+  main .contenedor-resultado .productos .producto {
+    grid-column: span 12;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "img titulo" "img precio"; }
+    main .contenedor-resultado .productos .producto .portada-producto {
+      grid-area: img; }
+    main .contenedor-resultado .productos .producto .nombre-producto {
+      grid-area: titulo;
+      align-self: end;
+      font-size: 1rem; }
+    main .contenedor-resultado .productos .producto .precio-producto {
+      grid-area: precio;
+      align-self: center; } }
 .footer {
   width: 100%;
   border-top: 1px solid #dadada;
