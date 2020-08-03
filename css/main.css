@@ -438,7 +438,8 @@ header {
   .productos .contenedor-productos {
     display: grid;
     grid-template-columns: repeat(20, 1fr);
-    grid-gap: 10px; }
+    grid-gap: 10px;
+    margin-bottom: 20px; }
     .productos .contenedor-productos .subtitulo {
       grid-column: span 20;
       font-weight: 300;
@@ -686,7 +687,7 @@ main {
             height: 100%;
             max-width: 100%; }
         main .contenedor-resultado .productos .producto .nombre-producto {
-          font-size: 14px;
+          font-size: 1rem;
           grid-area: titulo;
           font-weight: normal;
           line-height: 20px;
@@ -842,10 +843,233 @@ main {
     main .contenedor-resultado .productos .producto .nombre-producto {
       grid-area: titulo;
       align-self: end;
-      font-size: 1rem; }
+      font-size: 14px; }
     main .contenedor-resultado .productos .producto .precio-producto {
       grid-area: precio;
       align-self: center; } }
+.page-producto {
+  width: 100%;
+  padding: 0px; }
+  .page-producto .producto-individual {
+    margin: 0;
+    width: 100%;
+    padding-top: 20px;
+    background: #fff;
+    padding-bottom: 25px;
+    margin-bottom: 25px; }
+    .page-producto .producto-individual .contenedor-producto-individual {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap; }
+      .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual {
+        width: 48%;
+        display: flex;
+        flex-direction: column; }
+        .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual .portada-producto-individual img {
+          width: 100%; }
+        .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual .imagenes-producto-individual {
+          border-top: 1px solid #dadada;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-top: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px; }
+          .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual .imagenes-producto-individual .img-producto-individual {
+            margin-right: 5px;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all .8s ease;
+            width: 100px;
+            height: 100px; }
+            .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual .imagenes-producto-individual .img-producto-individual img {
+              width: 100%;
+              height: 100%; }
+            .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual .imagenes-producto-individual .img-producto-individual:hover {
+              border-color: #dadada; }
+      .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto {
+        width: 48%; }
+        .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .marca-producto-individual {
+          width: 100%;
+          margin: 10px 0px;
+          color: blue;
+          font-weight: bold; }
+        .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .nombre-producto-individual {
+          width: 100%; }
+          .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .nombre-producto-individual h1 {
+            padding: 5px 0px 20px;
+            font-size: 27px;
+            line-height: 1.18;
+            letter-spacing: -0.5px;
+            text-align: left;
+            color: #000;
+            font-weight: 600; }
+        .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .precio-producto-individual {
+          color: #000; }
+          .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .precio-producto-individual span {
+            font-size: 34px;
+            font-weight: 400;
+            letter-spacing: -0.32px;
+            line-height: 1; }
+        .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual {
+          margin-top: 10px;
+          border: 1px solid #dadada;
+          border-radius: 2px;
+          margin-bottom: 21px;
+          position: relative;
+          top: 0;
+          left: 0; }
+          .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual:before {
+            content: "";
+            position: absolute;
+            border-top-right-radius: 2px;
+            background: #f4f4f4 none repeat scroll 0% 0%;
+            width: 13px;
+            height: 13px;
+            top: -5.5px;
+            left: 34px;
+            z-index: 0;
+            transform: rotate(-45deg);
+            display: block;
+            border: 1px solid #dadada; }
+          .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual h1 {
+            display: block;
+            width: 100%;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1rem;
+            letter-spacing: -0.3px;
+            color: #000;
+            background: #f4f4f4 none repeat scroll 0% 0%;
+            text-align: left;
+            padding: 16px 0px 16px 15px;
+            position: relative;
+            border-bottom: 1px solid #dadada;
+            z-index: 2; }
+          .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual .metodo {
+            width: 100%;
+            padding: 15px 21px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 10px;
+            align-items: center; }
+            .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual .metodo .figure-metodo-pago {
+              grid-row-start: 1;
+              grid-row-end: 3;
+              grid-column: span 1;
+              border: 1px solid #dadada; }
+              .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual .metodo .figure-metodo-pago img {
+                width: 100%; }
+            .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual .metodo .cuotas {
+              grid-column-start: 2;
+              grid-column-end: 7;
+              grid-row-start: 1;
+              grid-row-end: 2;
+              text-align: left;
+              font-size: 1rem;
+              font-weight: 500;
+              letter-spacing: -0.38px;
+              color: #4a4a4a; }
+            .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual .metodo .detalles-financiado {
+              grid-column-start: 2;
+              grid-column-end: 7;
+              grid-row-start: 2;
+              grid-row-end: 3;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 1.29;
+              letter-spacing: -0.5px;
+              color: #888888; }
+          .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual .ver-mas-cuotas {
+            border-top: 1px solid #dadada;
+            padding: 15px; }
+            .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .metodos-de-pago-producto-individual .ver-mas-cuotas a {
+              display: block;
+              text-align: left;
+              font-weight: 400;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.31;
+              letter-spacing: -0.5px;
+              color: #006afd; }
+        .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .comprar-producto-individual {
+          display: block;
+          width: 100%;
+          text-align: center;
+          padding: 13px 18px;
+          border-radius: 2px;
+          background-color: #B33771;
+          color: #fff;
+          text-transform: uppercase;
+          cursor: pointer;
+          font-weight: 600;
+          line-height: 1;
+          font-size: 18px; }
+        .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .envio-retiro-producto-individual {
+          margin-top: 10px;
+          border: 1px solid #dadada;
+          border-radius: 2px;
+          margin-bottom: 21px; }
+          .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .envio-retiro-producto-individual .caja-envio-retiro {
+            width: 100%;
+            padding: 15px 21px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 10px;
+            align-items: center; }
+            .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .envio-retiro-producto-individual .caja-envio-retiro:nth-child(1) {
+              border-bottom: 1px solid #dadada; }
+            .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .envio-retiro-producto-individual .caja-envio-retiro .icono-caja-envio {
+              grid-column-start: 1;
+              grid-column-end: 2;
+              grid-row-start: 1;
+              grid-row-end: 3;
+              font-size: 2rem;
+              justify-self: center;
+              color: #dadada; }
+            .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .envio-retiro-producto-individual .caja-envio-retiro .titulo-caja-envio {
+              grid-column-start: 2;
+              grid-column-end: 7;
+              grid-row-start: 1;
+              grid-row-end: 2;
+              font-size: 1rem;
+              font-weight: 400;
+              line-height: 1;
+              letter-spacing: -0.5px;
+              color: #000;
+              margin-bottom: 5px; }
+            .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .envio-retiro-producto-individual .caja-envio-retiro .enlace-caja-envio {
+              grid-column-start: 2;
+              grid-column-end: 7;
+              grid-row-start: 2;
+              grid-row-end: 3;
+              display: block;
+              text-align: left;
+              font-weight: 400;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: 1.31;
+              letter-spacing: -0.5px;
+              color: #006afd;
+              transition: all .8s ease; }
+              .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto .envio-retiro-producto-individual .caja-envio-retiro .enlace-caja-envio:hover {
+                text-decoration: underline; }
+
+@media (max-width: 750px) {
+  .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual {
+    width: 100%; }
+    .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual .portada-producto-individual {
+      display: none; }
+    .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual .imagenes-producto-individual {
+      border: none; }
+      .page-producto .producto-individual .contenedor-producto-individual .galeria-producto-individual .imagenes-producto-individual .img-producto-individual {
+        width: 200px;
+        height: 200px; }
+  .page-producto .producto-individual .contenedor-producto-individual .informacion-compra-producto {
+    width: 100%; } }
 .footer {
   width: 100%;
   border-top: 1px solid #dadada;
