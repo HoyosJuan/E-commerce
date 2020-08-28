@@ -42,16 +42,43 @@
         <li><a href="#">Ayuda</a></li>
       </ul>
       <ul class="menu-usuario-web">
-        <li class='media'><a href="#">Creá tu cuenta</a></li>
-        <li class='media'><a href="#">Ingresá</a></li>
-        <li class='media'><a href="#">Mis Compras</a></li>
+        <li><i class="fas fa-user"></i></li>
         <li><i class="fas fa-shopping-cart"></i></li>
       </ul>
-      <div class="menu-mobil">
+      <div class="btn-menu-mobile">
         <i class="fas fa-bars"></i>
       </div>
     </div>
   </header>
+
+  <div class="menu-mobile">
+    <div class="contenedor contenedor-menu-mobile">
+      <div class="close-menu-mobile">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul class="options-usuario-mobile">
+        <li class='mobile-usuario'><a href="#"><i class="fas fa-user"></i> Mi cuenta</a></li>
+        <li class='mobile-carrito'><a href="#"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+      </ul>
+      <ul class="menu-principal-mobile">
+        <li id='categoriasMobile'>
+          Categorías <i class="fas fa-angle-down"></i>
+          <ul id='subMenCat'>
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">E</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Historial</a></li>
+        <li><a href="#">Tiendas Oficiales</a></li>
+        <li><a href="#">Vender</a></li>
+        <li><a href="#">Ayuda</a></li>
+      </ul>
+    </div>
+  </div>
 
   <!-- Banner -->
   <div class="banner">
@@ -162,50 +189,6 @@
           <span class='pre-titulo'>HASTA</span>
           <span class='porcentaje-oferta'>35% OFF</span>
           <span class='titulo-oferta'>CELULARES</span>
-          <a href="#" class='ver-oferta'>Ver ofertas</a>
-        </p>
-      </div>
-      <div class="caja-4">
-        <figure class="portada-oferta">
-          <img src='./images/celulares.jpg' alt='' />
-        </figure>
-        <p class="texto-oferta">
-          <span class='pre-titulo'>HASTA</span>
-          <span class='porcentaje-oferta'>35% OFF</span>
-          <span class='titulo-oferta'>CELULARES</span>
-          <a href="#" class='ver-oferta'>Ver ofertas</a>
-        </p>
-      </div>
-      <div class="caja-4">
-        <figure class="portada-oferta">
-          <img src='./images/deportes.jpg' alt='' />
-        </figure>
-        <p class="texto-oferta">
-          <span class='pre-titulo'>HASTA</span>
-          <span class='porcentaje-oferta'>30% OFF</span>
-          <span class='titulo-oferta'>DEPORTES</span>
-          <a href="#" class='ver-oferta'>Ver ofertas</a>
-        </p>
-      </div>
-      <div class="caja-2">
-        <figure class="portada-oferta">
-          <img src='./images/herramientas.jpg' alt='' />
-        </figure>
-        <p class="texto-oferta">
-          <span class='pre-titulo'>HASTA</span>
-          <span class='porcentaje-oferta'>35% OFF</span>
-          <span class='titulo-oferta'>Herramientas</span>
-          <a href="#" class='ver-oferta'>Ver ofertas</a>
-        </p>
-      </div>
-      <div class="caja-2">
-        <figure class="portada-oferta">
-          <img src='./images/tv.jpg' alt='' />
-        </figure>
-        <p class="texto-oferta">
-          <span class='pre-titulo'>HASTA</span>
-          <span class='porcentaje-oferta'>25% OFF</span>
-          <span class='titulo-oferta'>TELEVISORES</span>
           <a href="#" class='ver-oferta'>Ver ofertas</a>
         </p>
       </div>
@@ -558,6 +541,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./js/subMenus.js"></script>
+  <script src="./js/menuMobile.js"></script>
 
 </body>
 </html>
